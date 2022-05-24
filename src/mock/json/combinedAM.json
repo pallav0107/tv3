@@ -1,0 +1,153 @@
+{
+  "lastDateRefreshed": "2022-05-21T13:06:10.477Z",
+  "lostCustomerMinutes247": {
+    "percentage": 0
+  },
+  "peakCustomerOnTime": {
+    "percentage": 0,
+    "sector1": {
+      "percentage": 0
+    },
+    "sector2": {
+      "percentage": 0
+    },
+    "sector3": {
+      "percentage": 0
+    }
+  },
+  "peakPunctuality": {
+    "percentage": 0,
+    "sector1": {
+      "percentage": 0
+    },
+    "sector2": {
+      "percentage": 0
+    },
+    "sector3": {
+      "percentage": 0
+    }
+  },
+  "trainImpact": {
+    "metropolitan": {
+      "plannedService": 0,
+      "notRunYet": 0,
+      "onTime": {
+        "value": 0,
+        "percentage": 0
+      },
+      "late": 0,
+      "cancellation": 0
+    },
+    "intercity": {
+      "plannedService": 0,
+      "notRunYet": 0,
+      "onTime": {
+        "value": 0,
+        "percentage": 0
+      },
+      "late": 0,
+      "cancellation": 0
+    },
+    "network": {
+      "plannedService": 0,
+      "notRunYet": 0,
+      "onTime": {
+        "value": 0,
+        "percentage": 0
+      },
+      "late": 0,
+      "cancellation": 0
+    }
+  },
+  "customarImpact": {
+    "metropolitan": {
+      "plannedCustomers": 0,
+      "customerOnTime": {
+        "value": 0,
+        "percentage": 0
+      },
+      "customerNotOnTime": {
+        "value": 0,
+        "percentage": 0
+      }
+    },
+    "intercity": {
+      "plannedCustomers": 0,
+      "customerOnTime": {
+        "value": 0,
+        "percentage": 0
+      },
+      "customerNotOnTime": {
+        "value": 0,
+        "percentage": 0
+      }
+    },
+    "network": {
+      "plannedCustomers": 0,
+      "customerOnTime": {
+        "value": 0,
+        "percentage": 0
+      },
+      "customerNotOnTime": {
+        "value": 0,
+        "percentage": 0
+      }
+    }
+  },
+  "punctualityPerformance": {
+    "t1": {
+      "punct": 0,
+      "cot": 0
+    },
+    "t2": {
+      "punct": 0,
+      "cot": 0
+    },
+    "t3": {
+      "punct": 0,
+      "cot": 0
+    },
+    "t4": {
+      "punct": 0,
+      "cot": 0
+    },
+    "t8": {
+      "punct": 0,
+      "cot": 0
+    },
+    "t9": {
+      "punct": 0,
+      "cot": 0
+    },
+    "intercity": {
+      "punct": 0,
+      "cot": 0
+    }
+  },
+  "incidents": {
+    "top1": {
+      "count": 0,
+      "incidentTime": "2022-05-21T13:06:10.477Z",
+      "type": "string",
+      "location": "string",
+      "trainDelay": 0,
+      "passengerDelay": 0
+    },
+    "top2": {
+      "count": 0,
+      "incidentTime": "2022-05-21T13:06:10.477Z",
+      "type": "string",
+      "location": "string",
+      "trainDelay": 0,
+      "passengerDelay": 0
+    },
+    "top3": {
+      "count": 0,
+      "incidentTime": "2022-05-21T13:06:10.477Z",
+      "type": "string",
+      "location": "string",
+      "trainDelay": 0,
+      "passengerDelay": 0
+    }
+  }
+}

@@ -1,0 +1,380 @@
+swagger: "2.0"
+info:
+  description: "Sydney Trains Network"
+  version: "1.0.0"
+  title: "Sydney Trains Network Cots Reports"
+# host: "erppd.rail.nsw.gov.au"
+# basePath: "/v1"
+paths:
+  /cotsReports:
+    get:
+      tags:
+      - "Customer On Time Reports"
+      summary: "Get Combined Network Report"
+      description: "Get Combined Network Report"
+      operationId: "cotsNetworkStatus"
+      parameters:
+      - name: "reportClock"
+        in: "query"
+        description: "Time of report to be queried"
+        required: true
+        type: "string"
+        enum:
+        - "am"
+        - "pm"
+        - "ampm"
+      - name: "reportType"
+        in: "query"
+        description: "Type of report to be queried"
+        required: true
+        type: "string"
+        enum:
+        - "combinedNetwork"
+        - "sydneyTrains"
+        - "nswTrainLink"
+      - name: "displayDate"
+        in: "query"
+        description: "Type of report to be queried"
+        type: "string"
+        format: "date-time"
+        
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Peak"
+        "500":
+          description: "500 Error"
+          schema:
+            $ref: "#/definitions/Error"
+definitions:
+  Error: 
+    type: "object"
+    properties:
+     error:
+        type: "string"
+     message:
+        type: "string"
+     correlationId:
+        type: "string"
+  Percentage: 
+    type: "object"
+    properties:
+     percentage:
+        type: "number"
+        format: "float"
+  Peak:
+    type: "object"
+    properties:
+     lastDateRefreshed: 
+      type: "string"
+      format: "date-time"
+     lostCustomerMinutes247:
+      $ref: "#/definitions/Percentage"
+     peakCustomerOnTime:
+      type: "object"
+      properties:
+       percentage: 
+        type: "number"
+        format: "float"
+       sector1:
+        $ref: "#/definitions/Percentage"
+       sector2:
+        $ref: "#/definitions/Percentage"
+       sector3:
+        $ref: "#/definitions/Percentage"
+     peakPunctuality:
+      type: "object"
+      properties:
+       percentage: 
+        type: "number"
+        format: "float"
+       sector1:
+        $ref: "#/definitions/Percentage"
+       sector2:
+        $ref: "#/definitions/Percentage"
+       sector3:
+        $ref: "#/definitions/Percentage"
+     trainImpact:
+      type: "object"
+      properties:
+       metropolitan:
+        type: "object"
+        properties:
+          plannedService:
+            type: "number"
+            format: "float"
+          notRunYet:
+            type: "number"
+            format: "float"
+          onTime:
+           type: "object"
+           properties:
+             value:
+              type: "number"
+              format: "float"
+             percentage:
+               type: "number"
+               format: "float"
+          late: 
+            type: "number"
+            format: "float"
+          cancellation: 
+            type: "number"
+            format: "float"
+       intercity:
+        type: "object"
+        properties:
+          plannedService: 
+            type: "number"
+            format: "float"
+          notRunYet:
+            type: "number"
+            format: "float"
+          onTime:
+           type: "object"
+           properties:
+            value: 
+             type: "number"
+             format: "float"
+            percentage: 
+             type: "number"
+             format: "float"
+          late: 
+            type: "number"
+            format: "float"
+          cancellation: 
+            type: "number"
+            format: "float"
+       network:
+        type: "object"
+        properties:
+          plannedService: 
+           type: "number"
+           format: "float"
+          notRunYet:
+           type: "number"
+           format: "float"
+          onTime:
+           type: "object"
+           properties:
+            value: 
+             type: "number"
+             format: "float"
+            percentage: 
+             type: "number"
+             format: "float"
+          late: 
+            type: "number"
+            format: "float"
+          cancellation: 
+            type: "number"
+            format: "float"
+     customarImpact: 
+      type: object
+      properties: 
+        metropolitan:
+          type: object
+          properties: 
+            plannedCustomers: 
+              type: "number"
+              format: "float"
+            customerOnTime: 
+              type: object
+              properties: 
+                value: 
+                  type: "number"
+                  format: "float"
+                percentage: 
+                  type: "number"
+                  format: "float"
+            customerNotOnTime: 
+              type: object
+              properties: 
+                value: 
+                  type: "number"
+                  format: "float"
+                percentage: 
+                  type: "number"
+                  format: "float"
+        intercity:
+          type: object
+          properties: 
+            plannedCustomers: 
+              type: "number"
+              format: "float"
+            customerOnTime: 
+              type: object
+              properties: 
+                value: 
+                  type: "number"
+                  format: "float"
+                percentage: 
+                  type: "number"
+                  format: "float"
+            customerNotOnTime: 
+              type: object
+              properties: 
+                value: 
+                  type: "number"
+                  format: "float"
+                percentage: 
+                  type: "number"
+                  format: "float"
+        network:
+          type: object
+          properties: 
+            plannedCustomers: 
+              type: "number"
+              format: "float"
+            customerOnTime: 
+              type: object
+              properties: 
+                value: 
+                  type: "number"
+                  format: "float"
+                percentage: 
+                  type: "number"
+                  format: "float"
+            customerNotOnTime: 
+              type: object
+              properties: 
+                value: 
+                  type: "number"
+                  format: "float"
+                percentage: 
+                  type: "number"
+                  format: "float"
+     punctualityPerformance: 
+      type: object
+      properties: 
+       t1:
+        type: object
+        properties: 
+          punct: 
+           type: "number"
+           format: "float"
+          cot: 
+           type: "number"
+           format: "float"
+       t2:
+        type: object
+        properties: 
+          punct: 
+           type: "number"
+           format: "float"
+          cot: 
+           type: "number"
+           format: "float"
+       t3:
+        type: object
+        properties: 
+          punct: 
+           type: "number"
+           format: "float"
+          cot: 
+           type: "number"
+           format: "float"
+       t4:
+        type: object
+        properties: 
+          punct: 
+           type: "number"
+           format: "float"
+          cot: 
+           type: "number"
+           format: "float"
+       t8:
+        type: object
+        properties: 
+          punct: 
+           type: "number"
+           format: "float"
+          cot: 
+           type: "number"
+           format: "float"
+       t9:
+        type: object
+        properties: 
+          punct: 
+           type: "number"
+           format: "float"
+          cot: 
+           type: "number"
+           format: "float"
+       intercity:
+        type: object
+        properties: 
+          punct: 
+           type: "number"
+           format: "float"
+          cot: 
+           type: "number"
+           format: "float"
+     incidents: 
+      type: object
+      properties: 
+        top1: 
+         type: object
+         properties: 
+          count: 
+            type: integer
+            format: int32
+          incidentTime: 
+            type: string
+            format: date-time
+          type: 
+            type: string
+          location: 
+            type: string
+          trainDelay: 
+            type: integer
+            format: int32
+          passengerDelay: 
+            type: integer
+            format: int32
+        top2: 
+         type: object
+         properties: 
+          count: 
+            type: integer
+            format: int32
+          incidentTime: 
+            type: string
+            format: date-time
+          type: 
+            type: string
+          location: 
+            type: string
+          trainDelay: 
+            type: integer
+            format: int32
+          passengerDelay: 
+            type: integer
+            format: int32
+        top3: 
+         type: object
+         properties: 
+          count: 
+            type: integer
+            format: int32
+          incidentTime: 
+            type: string
+            format: date-time
+          type: 
+            type: string
+          location: 
+            type: string
+          trainDelay: 
+            type: integer
+            format: int32
+          passengerDelay: 
+            type: integer
+            format: int32
+# Added by API Auto Mocking Plugin
+host: virtserver.swaggerhub.com
+basePath: /Apallav01/swag/1.0.0
+schemes:
+ - https

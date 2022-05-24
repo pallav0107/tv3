@@ -1,0 +1,543 @@
+.chartOptions7{
+  /* float: right; */
+  z-index: 2;
+  position: absolute;
+  left: 424px;
+  width: 300px;
+  height: 0;
+  top: 50px;
+  margin-left: 2%;
+  }
+
+.first-chart{
+  left: 140px;
+  /* top: -10px; */
+  margin-top: -30px;
+}  
+
+  
+.first-chart h5{
+  bottom: 30px;
+  /* margin-bottom: -80px; */
+  /* margin-left: 80px; */
+  text-align: center;
+}
+  .chartOptions7 h4{
+    margin-bottom: -90px;
+    /* text-align: center; */
+  }
+
+  .chartOptions8{
+    position: absolute;
+    margin-left: 149%;  
+    top: 123%;
+  }
+
+.highcharts-figure {
+  margin-bottom: 0%;
+    float: left;
+    margin: 1px;
+    margin-right: 10px;
+    padding: 0;
+    margin-left: 20px;
+    width: 95%;
+    /* margin-top: -25px; */
+  }
+
+  /*/--------------------------------------- */
+  .dropdown select{
+    width: 110px;
+    height: 25px;
+    color: white;
+    background-color: black;
+    overflow: hidden;
+  }
+  .dropdown option{
+    color: white;
+  }
+  .highcharts-figure h5{
+    top: 35px;
+    position: absolute  ;
+    left: 60px;
+  }
+
+  .highcharts-figure li {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    padding: 0px;
+    margin-top: 30px;
+  }
+  
+  #tables{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-left: 20px;
+    width: 97%;
+    margin-right: 0;  
+    margin-top: 35px;
+  }
+  .tcl-1{
+    font-weight: 700;
+    text-align: left;
+    width: 210;
+  }
+
+   td{
+    width: 150px;
+  }
+  
+  th{
+    color: white;
+    background-color: #117fcd;
+  }
+
+  .clr {
+    background-color:rgb(218, 218, 218);
+  }
+
+  .circle {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(172, 182, 172);
+    border-radius: 50%;
+    margin-left: 17%;
+    margin-bottom: 7PX;
+    box-shadow:inset 0px  5px 5px white;
+    /* padding: 2px; */
+  }
+  
+
+
+  .table-2{ 
+    align-items: center;
+    width: 500px;
+    padding-left: 40px;
+    
+  }
+
+  .table-2 td{
+    width: 700px;
+    height: 30px;
+  }
+
+   table, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  .text{
+    font-family:Sans-serif ;
+    /* margin: auto; */
+    text-align: center;
+  }
+
+  .table-2 th{
+  color: black;
+  height: 200px;
+  background-color: gray; /* For browsers that do not support gradients */
+  background-image: linear-gradient(gray, white);
+  height: 90px;
+}
+.table-2 th p{
+  margin-top: 3px;
+}
+
+.pass-row{
+  height: 50px;
+}
+
+
+.flowchart{
+  width: 97%;
+  margin-left: 20px;
+  margin-top: 30px;
+  
+}
+
+.parent-1{
+  display: flex;
+}
+
+.leftside-chart{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.rightside-chart{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.parent-2 .leftside-chart .discriction-2 p{
+  color:red;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.parent-2 .leftside-chart .toggle h1{
+  background-color: red;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+} 
+.parent-2 .rightside-chart .toggle h1{
+  background-color:blue;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+} 
+.parent-2 .rightside-chart .discriction-2 p{
+  color:#117fcd ;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.parent-2 .rightside-chart .discriction-2 p{
+  color:blue ;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+/* ***************************************** */
+
+.location-upper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.highcharts-grid-line{
+  display: none;
+}
+.highcharts-axis-line{
+  display: none;
+}
+.highcharts-tick{
+  display: none;
+}
+.highcharts-axis-labels{
+  display: none;
+}
+.highcharts-credits{
+  display: none;
+}
+
+.highcharts-background{
+  height: 10px;
+  display: none;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.leftside-chart .parent-1 .toggle h1{
+  background-color: 	#FF8C00;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.parent-1 .leftside-chart .upperChart-1 .discript{
+  color: 	#FF8C00	;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.parent-1 .leftside-chart .lowerChart-1 .discript{
+  color: 	#FF8C00 ;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.leftside-chart .upperChart-1 .discript-2{
+  position: absolute;
+  left: 228px;
+  padding-top: 5px;
+}
+.leftside-chart .lowerChart-1 .discript-2{
+ position: absolute;
+  left: 238px; 
+  margin-top: 22px;
+}
+.leftside-chart .upperChart-1 .chart-1{
+  position: absolute;
+  left: 336px;
+}
+.leftside-chart .lowerChart-1 .chart-1{
+  position: absolute;
+  left: 336px;
+}
+.leftside-chart .upperChart-1{
+  margin-top: 3px;
+}
+.leftside-chart .lowerChart-1{
+  margin-top: -20px;
+}
+
+
+/* --------------------------------------------------- */
+
+.parent-1 .rightside-chart .toggle h1{
+  background-color: 	#0096FF;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.parent-1 .rightside-chart .upperChart-1 .discript{
+  color: 	#0096FF	;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.parent-1 .rightside-chart .lowerChart-1 .discript{
+  color: 	#0096FF ;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.rightside-chart .upperChart-1 .discript-2{
+  position: absolute;
+  left: 830px;
+  padding-top: 5px;
+}
+.rightside-chart .lowerChart-1 .discript-2{
+ position: absolute;
+  left: 840px; 
+  margin-top: -10px;
+}
+.rightside-chart .upperChart-1 .chart-1{
+  position: absolute;
+  left: 930px;
+}
+.rightside-chart .lowerChart-1 .chart-1{
+  position: absolute;
+  left: 930px;
+  margin-top: -35px;
+}
+.rightside-chart .upperChart-1{
+  margin-top: 3px;
+}
+.rightside-chart .lowerChart-1{
+  margin-top: -20px;
+}
+
+/* ******************************************************************** */
+
+.parent-2{
+  display: flex;
+}
+.parent-2 .leftside-chart  .toggle h1{
+  background-color: 	red;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.parent-2 .leftside-chart .upperChart-1 .discript{
+  color: 	red	;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.parent-2 .leftside-chart .lowerChart-1 .discript{
+  color: 	red ;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.parent-2 .rightside-chart .upperChart-1 .discript{
+  color: 	blue	;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+/* ******************************************************************** */
+.parent-3{
+  display: flex;
+}
+.parent-3 .leftside-chart  .toggle h1{
+  background-color: 	green;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.parent-3 .leftside-chart .upperChart-1 .discript{
+  color: 	green	;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.parent-3 .leftside-chart .lowerChart-1 .discript{
+  color: 	green ;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.parent-3 .rightside-chart  .toggle h1{
+  background-color: 	red;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+}
+.parent-3 .rightside-chart .upperChart-1 .discript{
+  color: 	red	;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.parent-3 .rightside-chart .lowerChart-1 .discript{
+  color: 	red	;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.parent-3 .rightside-chart .lowerChart-1 .discript-2{
+  position: absolute;
+   left: 840px; 
+   margin-top:25px;
+ }
+.parent-3 .rightside-chart .upperChart-1 .chart-1{
+  position: absolute;
+  left: 930px;
+  margin-top: 35px;
+}
+
+/* ******************************************************************** */
+.parent-4 .leftside-chart  .toggle h1{
+  background-color: red;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.parent-4 .leftside-chart .upperChart-1 .discript{
+  color: 	green	;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.parent-4 .leftside-chart .lowerChart-1 .discript{
+  color: 	green ;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.parent-4 .leftside-chart .lowerChart-1 .discript-2{
+  position: absolute;
+   /* left: 840px;  */
+   /* margin-top:25px; */
+   padding-left: 5px;
+   padding-top: 20px;
+}
+.parent-4 .lowerChart-1 .chart-1{
+margin-top: 20px;
+}
+/* **************************************** Header **************************** */
+.header{
+  display: flex;
+  height: 80px;
+}
+.Logo{
+  height: 80px;
+  width: 37%;
+}
+.Logo img{
+  height: 80px;
+}
+.left-header{
+  background-color: #FF8C00;
+  display: flex;
+  width: 100%;
+  position: relative;
+  border-top-left-radius: 15px 15px;
+  border-top-right-radius: 15px 15px;
+}
+.left-header h1{
+  font-size: 40px;
+  padding: 10px;
+  align-items: center;
+  margin-top: 8px;font-family: sans-serif;
+  color: white;
+}
+.two-logos{
+  position: absolute;
+  display: flex;
+  /* float: left; */
+  /* left: 0%; */
+  right: 40px;
+}
+.NSW-Logo img{
+  height: 80px;
+}
+.logo3 img{
+  height: 55px;
+  margin-top: 15px;
+}
+
+/* **************************** Header-2  ************************************ */
+
+.header-2{
+  display: flex;
+  padding-top: 5px;
+}
+
+.header-2 .weather-widget{
+    /* float: left; */
+    margin-left: 55px;
+}
+
+/* ***************************************************************************** */
+.all-charts{
+  display: flex;
+  margin-top: -80px;
+}
+.top-3-charts{
+  top: 365px;
+  left: 340px;
+  position: absolute;
+}
+.top-2-charts{
+  position: absolute;
+  top: 130px;
+  left: 20px;
+}
+
+.weather-widget{
+  width: 850px;
+}

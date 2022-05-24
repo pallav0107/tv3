@@ -1,0 +1,26 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "North Shor",
+      "code":"POST:87.0%",
+      "title2": "& Western Line",
+      "code2":"COT:92,9%"
+    },
+    {
+      "id": 2,
+      "title": "North Shor",
+      "code":"POST:87.0%",
+      "title2": "& Western Line",
+      "code2":"COT:92,9%"
+    },
+    {
+      "id": 3,
+      "title": "North Shor",
+      "code":"POST:87.0%",
+      "title2": "& Western Line",
+      "code2":"COT:92,9%"
+    }
+   
+  ]
+}
